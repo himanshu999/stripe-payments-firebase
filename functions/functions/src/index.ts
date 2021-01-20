@@ -33,6 +33,6 @@ exports.createStripeCharge = functions.https.onCall((data, context) => {
         source: source,
         amount: amount,
         currency: "jpy",
-        { idempotency_key: idempotencyKey }
+        //{ idempotency_key: idempotencyKey }
     })
 });
