@@ -26,7 +26,7 @@ exports.createStripeCharge = functions.https.onCall((data, context) => {
     const customer = data.customerId;
     const source = data.sourceId;
     const amount = data.amount;
-    const idempotencyKey = data.idempotencyKey;
+    //const idempotencyKey = data.idempotencyKey;
 
     return stripe.charges.create({
         customer: customer,
